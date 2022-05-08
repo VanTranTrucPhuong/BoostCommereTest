@@ -50,16 +50,21 @@ getData(blocksPath);
 function getSuggestedData(data, value, type) {
   return data.filter(function (el) {
     switch (type) {
-      case dataType.collections: {
+      case dataType.suggestions: {
         const { term } = el;
         if (term.toLowerCase().includes(value.toLowerCase())) return el;
         break;
       }
 
-      default: {
+      case dataType.collections:
+      case dataType.products: {
         const { title } = el;
         if (title.toLowerCase().includes(value.toLowerCase())) return el;
         break;
+      }
+
+      default: {
+        return [];
       }
     }
   });
@@ -94,12 +99,12 @@ function autoSuggestion() {
     let suggestions = getSuggestedData(
       JSON.parse(localStorage.getItem("suggestions")),
       value,
-      dataType.collections
+      dataType.suggestions
     );
     let collections = getSuggestedData(
       JSON.parse(localStorage.getItem("collections")),
       value,
-      dataType.suggestions
+      dataType.collections
     );
     let products = getSuggestedData(
       JSON.parse(localStorage.getItem("products")),
