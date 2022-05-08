@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boost Commerce</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div class="container-fluid">
+        <div class="logo">
+          <h5>Product filter demo</h5>
+        </div>
+
+        <div class="nav__bar">
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>Tops</a></li>
+            <li><a>Dresses</a></li>
+            <li><a>Outerwear</a></li>
+            <li><a>Intimates</a></li>
+            <li><a>Swimwear</a></li>
+            <li><a>Shoes</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__bar__mobile">
+          <i class="fas fa-bars"></i>
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>Tops</a></li>
+            <li><a>Dresses</a></li>
+            <li><a>Outerwear</a></li>
+            <li><a>Intimates</a></li>
+            <li><a>Swimwear</a></li>
+            <li><a>Shoes</a></li>
+          </ul>
+        </div>
+
+        <div class="action">
+          <div class="action__search">
+            <div id="search__box" class="search__box">
+              <a id="search__icon" onclick="handleSearchBox(true)" class="icon">
+                <i class="fas fa-search"></i>
+              </a>
+              <input
+                onblur="handleSearchBox(false)"
+                onkeyup="autoSuggestion()"
+                type="text"
+                id="search__input"
+                class="search__input"
+                placeholder="Search..."
+              />
+              <a id="remove__icon">
+                <i class="fas fa-times-circle"></i>
+              </a>
+              <div id="search__result"></div>
+            </div>
+          </div>
+
+          <div class="action__nation">
+            <div class="nation__flag">
+              <img
+                src="./images/nations/American-Flag-Wallpapers.png"
+                alt="USA_flag"
+              />
+            </div>
+            <div class="nation__currency">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  USD
+                  <i class="fa fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item">USD</a></li>
+                  <li><a class="dropdown-item">VND</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="action__cart">
+            <i class="fas fa-shopping-basket"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- body start -->
+    <main>
+      <section id="category">
+        <h3 id="category__text" class="font-weight-bold fa-3x">Dresses</h3>
+      </section>
+
+      <section id="view">
+        <div class="container">
+          <div class="view__as">
+            <span class="text--hide">View As</span>
+            <i class="fa fa-th px-2"></i>
+            <i class="fa fa-list"></i>
+          </div>
+          <div class="view__count">
+            <span class="font-italic">38 products</span>
+          </div>
+          <div class="view__sort">
+            <span class="text--hide">Alphabetically, </span><span>A-Z</span>
+            <i class="fa fa-angle-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <section id="product">
+        <div class="container row p-0">
+          <div class="col-4 col-lg-2 product__category p-0">
+            <div
+              class="panel-group"
+              id="accordionMenu"
+              role="tablist"
+              aria-multiselectable="true"
+            >
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordionMenu"
+                      href="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i class="fa pr-1"></i>
+                      Collection
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseOne"
+                  class="panel-collapse collapse in"
+                  role="tabpanel"
+                  aria-labelledby="headingOne"
+                >
+                  <div class="panel-body">
+                    <ul>
+                      <li><a>Tops (40)</a></li>
+                      <li><a>Dresses (38)</a></li>
+                      <li><a>Intimates (38)</a></li>
+                      <li><a>Outerwear (42)</a></li>
+                      <li><a>Swimwear (39)</a></li>
+                      <li><a>Shoes (44)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordionMenu"
+                      href="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <i class="fa pr-1"></i>
+                      Style
+                      <i class="far fa-question-circle"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  aria-labelledby="headingTwo"
+                >
+                  <div class="panel-body">
+                    <ul>
+                      <li><a>Style 1</a></li>
+                      <li><a>Style 2</a></li>
+                      <li><a>Style 3</a></li>
+                      <li><a>Style 4</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordionMenu"
+                      href="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <i class="fa pr-1"></i>
+                      Brand
+                      <i class="far fa-question-circle"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  aria-labelledby="headingThree"
+                >
+                  <div class="panel-body">
+                    <ul>
+                      <li><a>Item 1</a></li>
+                      <li><a>Item 2</a></li>
+                      <li><a>Item 3</a></li>
+                      <li><a>Item 4</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col pr-0">
+            <div id="product__list" class="row"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- body end -->
+
+    <!-- footer start -->
+    <footer></footer>
+    <!-- footer end -->
+
+    <!-- script  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/app.js"></script>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

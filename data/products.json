@@ -1,0 +1,66 @@
+[
+  {
+    "id": "62775f70c581f6bb2378cba1",
+    "title": "Intimates",
+    "url": "https://i.pinimg.com/originals/9d/c2/68/9dc2683495ea84ce751d5860513a34ab.jpg",
+    "brand": "CAPSCREEN",
+    "price": "$3,870",
+    "image": "https://i.pinimg.com/originals/9d/c2/68/9dc2683495ea84ce751d5860513a34ab.jpg"
+  },
+  {
+    "id": "62775f709391d128d7b5e143",
+    "title": "Dresses",
+    "url": "https://i.pinimg.com/236x/f1/e7/ea/f1e7ea8cde0d247e98ab44b8882245e0--black-maxi-dresses-casual-dresses.jpg",
+    "brand": "DARWINIUM",
+    "price": "$2,230",
+    "image": "https://i.pinimg.com/236x/f1/e7/ea/f1e7ea8cde0d247e98ab44b8882245e0--black-maxi-dresses-casual-dresses.jpg"
+  },
+  {
+    "id": "62775f70238d7f91708c4929",
+    "title": "Outerwear",
+    "url": "https://i.pinimg.com/originals/cd/52/36/cd523621024208215e8305dcaae6fc6e.jpg",
+    "brand": "QNEKT",
+    "price": "$3,106",
+    "image": "https://i.pinimg.com/originals/cd/52/36/cd523621024208215e8305dcaae6fc6e.jpg"
+  },
+  {
+    "id": "62775f702df3fce3b180b719",
+    "title": "Intimates",
+    "url": "https://i.pinimg.com/originals/a3/68/85/a36885ba8f33602cc930cda1e421a1e4.jpg",
+    "brand": "GINK",
+    "price": "$1,482",
+    "image": "https://i.pinimg.com/originals/a3/68/85/a36885ba8f33602cc930cda1e421a1e4.jpg"
+  },
+  {
+    "id": "62775f70aa08eed4373bb7b0",
+    "title": "Tops",
+    "url": "https://i.pinimg.com/236x/4e/a2/fd/4ea2fd475d6cdb126da19e71d8fb08e8--navy-formal-dress-formal-maxi-dresses.jpg",
+    "brand": "URBANSHEE",
+    "price": "$1,472",
+    "image": "https://i.pinimg.com/236x/4e/a2/fd/4ea2fd475d6cdb126da19e71d8fb08e8--navy-formal-dress-formal-maxi-dresses.jpg"
+  },
+  {
+    "id": "62775f70f9e834d011d40212",
+    "title": "Black Drop-top Dress",
+    "url": "https://i.pinimg.com/originals/f4/5b/d1/f45bd1696d730dc5766ed760ccbb6fce.jpg",
+    "brand": "UPLINX",
+    "price": "$2,302",
+    "image": "https://i.pinimg.com/originals/f4/5b/d1/f45bd1696d730dc5766ed760ccbb6fce.jpg"
+  },
+  {
+    "id": "6277b7f1a9340e234de4dc9d",
+    "title": "Intimates",
+    "url": "https://i.pinimg.com/originals/95/97/20/9597207dd86e1b65d5437d07ff097b77.jpg",
+    "brand": "ESCHOIR",
+    "price": "$3,012",
+    "image": "https://i.pinimg.com/originals/95/97/20/9597207dd86e1b65d5437d07ff097b77.jpg"
+  },
+  {
+    "id": "6277b7f1e36c17ed84a5358b",
+    "title": "Dress",
+    "url": "https://i.pinimg.com/originals/4c/4f/3b/4c4f3b619d1abf363f7baeb361f1d0da.jpg",
+    "brand": "NEPTIDE",
+    "price": "$1,670",
+    "image": "https://i.pinimg.com/originals/4c/4f/3b/4c4f3b619d1abf363f7baeb361f1d0da.jpg"
+  }
+]
