@@ -657,7 +657,6 @@ p.no__result {
   }
 
   .action__search #search__result {
-    display: block;
     max-width: 250px;
     left: -150px;
   }
@@ -665,7 +664,6 @@ p.no__result {
 
 @media screen and (max-width: 520px) {
   .action__search #search__result {
-    display: block;
     max-width: 250px;
     left: 0;
   }
